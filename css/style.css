@@ -30,4 +30,48 @@ html {
   src: url("../fonts/dancingscript-regular-webfont.woff2") format("woff2"), url("../fonts/dancingscript-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+body {
+  font-family: "open_sansregular", "sans-serif";
+  font-size: 1.6rem;
+}
+
+.burger-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 1em;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  z-index: 1000;
+}
+.burger-btn:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+.burger-btn__box {
+  position: relative;
+  width: 40px;
+  height: 30px;
+}
+.burger-btn__box__bars, .burger-btn__box__bars::after, .burger-btn__box__bars::before {
+  position: absolute;
+  right: 0;
+  height: 3px;
+  content: "";
+  background-color: red;
+  transition: width 0.3s;
+}
+.burger-btn__box__bars {
+  width: 100%;
+}
+.burger-btn__box__bars::after {
+  top: 13px;
+  width: 60%;
+}
+.burger-btn__box__bars::before {
+  top: 27px;
+  width: 30%;
 }/*# sourceMappingURL=style.css.map */

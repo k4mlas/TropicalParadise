@@ -40,3 +40,48 @@ html {
 	font-weight: normal;
 	font-style: normal;
 }
+
+body {
+	font-family: 'open_sansregular', 'sans-serif';
+	font-size: 1.6rem;
+	background-color: red;
+}
+
+// Nawigacja
+
+.burger-btn {
+	position: fixed; //Element jest pozycjonowany względem okna przeglądarki.
+	top: 20px;
+	right: 20px;
+	padding: 1em;
+	background: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+	z-index: 1000;
+	&:focus {
+		outline: none;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		border-radius: 8px;
+	}
+	&__box {
+		position: relative;
+		width: 40px;
+		height: 30px;
+		&__bars,
+		&__bars::after,
+		&__bars::before {
+			@include burgerBtn;
+		}
+		&__bars {
+			width: 100%;
+			&::after {
+				top: 13px;
+				width: 60%;
+			}
+			&::before {
+				top: 27px;
+				width: 30%;
+			}
+		}
+	}
+}
