@@ -1,0 +1,34 @@
+@use './colors';
+@use './components';
+@use './mixin';
+//-------------------------------------------------------------------------
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%; // Będę używał REMów dlatego ustawiam na 62.5% by czcionka się zmnijszała lub powiększała w pzypadku zmiany przez użytkownika wielkości liter.
+	scroll-behavior: smooth; // Łagodne przewijanie.
+}
+
+@font-face {
+	font-family: 'open_sansbold', 'sans-serif';
+	src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+		url('../fonts/opensans-bold-webfont.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap; // użytkownik zanim pobierze się mu nasza czcionka to wyświetli mu się na jego.
+}
+
+@font-face {
+	font-family: 'open_sansregular', 'sans-serif';
+	src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+		url('../fonts/opensans-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
