@@ -32,3 +32,11 @@ html {
 	font-style: normal;
 	font-display: swap;
 }
+
+@font-face {
+	font-family: 'dancing_script_otregular', 'sans-serif';
+	src: url('../fonts/dancingscript-regular-webfont.woff2') format('woff2'),
+		url('../fonts/dancingscript-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
