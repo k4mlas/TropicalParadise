@@ -34,6 +34,7 @@ html {
 body {
   font-family: "open_sansregular", "sans-serif";
   font-size: 1.6rem;
+  background-color: red;
 }
 
 .burger-btn {
@@ -51,27 +52,32 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
 }
+.burger-btn:hover .burger-btn__bars::after,
+.burger-btn:hover .burger-btn__bars::before {
+  width: 100%;
+}
 .burger-btn__box {
   position: relative;
   width: 40px;
   height: 30px;
 }
-.burger-btn__box__bars, .burger-btn__box__bars::after, .burger-btn__box__bars::before {
+.burger-btn__bars, .burger-btn__bars::after, .burger-btn__bars::before {
   position: absolute;
   right: 0;
   height: 3px;
   content: "";
-  background-color: red;
+  background-color: #fff;
   transition: width 0.3s;
 }
-.burger-btn__box__bars {
+.burger-btn__bars {
   width: 100%;
 }
-.burger-btn__box__bars::after {
+.burger-btn__bars::after {
   top: 13px;
   width: 60%;
 }
-.burger-btn__box__bars::before {
+.burger-btn__bars::before {
   top: 27px;
   width: 30%;
+  transition-delay: 0.1s;
 }/*# sourceMappingURL=style.css.map */
