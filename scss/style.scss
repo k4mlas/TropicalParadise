@@ -1,6 +1,6 @@
-@use './colors';
-@use './components';
-@use './mixin';
+@import url(./_mixin.scss);
+@import url(./_colors.scss);
+@import url(./_components.scss);
 
 //reset css-------------------------------------------------------------------------
 
@@ -82,10 +82,12 @@ body {
 	&__bars,
 	&__bars::after,
 	&__bars::before {
-		@include mixin.burgerBtn;
+		@include btnBurger;
 	}
+
 	&__bars {
 		width: 100%;
+
 		&::after {
 			top: 13px;
 			width: 60%;
@@ -96,4 +98,16 @@ body {
 			transition-delay: 0.1s;
 		}
 	}
+}
+//header-------------------------------------
+
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2em;
+	height: 75vh;
+	text-align: center;
 }

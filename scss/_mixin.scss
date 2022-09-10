@@ -1,8 +1,15 @@
-@mixin burgerBtn {
+@mixin btnBurger {
 	position: absolute;
 	right: 0;
 	height: 3px;
 	content: '';
-	background-color: #fff;
+	background-color: blue;
 	transition: width 0.3s;
 }
+
+// @mixin heroImg {
+// 	background-image: $blue-gradient;
+// 	background-size: cover;
+// 	background-position: center;
+// 	background-attachment: fixed;
+// }
