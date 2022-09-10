@@ -1,6 +1,6 @@
-@import url(./_mixin.scss);
-@import url(./_colors.scss);
-@import url(./_components.scss);
+@use './colors';
+@use './components';
+@use './mixin';
 
 //reset css-------------------------------------------------------------------------
 
@@ -82,7 +82,7 @@ body {
 	&__bars,
 	&__bars::after,
 	&__bars::before {
-		@include btnBurger;
+		@include mixin.btnBurger;
 	}
 
 	&__bars {
@@ -110,4 +110,5 @@ body {
 	padding: 2em;
 	height: 75vh;
 	text-align: center;
+	color: colors.$pure-white;
 }
