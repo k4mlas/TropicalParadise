@@ -137,8 +137,12 @@ body {
   height: 100vh;
   width: 100%;
   transform: translateX(100%);
+  transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
   background-image: linear-gradient(45deg, rgb(20, 105, 241), rgb(42, 10, 184));
   z-index: 100;
+}
+.nav--active {
+  transform: translateX(0);
 }
 .nav__item {
   position: relative;
