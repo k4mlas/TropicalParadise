@@ -6,4 +6,10 @@
 	background-color: $pure-white;
 	transition: width 0.3s;
 }
-
+// Ten mixin ma zmienną $imgBg dzięki które wystarczy podstawić zdjęcie w css i ono się automatycznie w te zmienne wpisuje.
+@mixin bgImg($imgBg) {
+	background-image: $blue-gradient, url($imgBg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}

@@ -59,21 +59,21 @@ html {
 }
 
 @font-face {
-  font-family: "open_sansbold", "sans-serif";
+  font-family: "open_sansbold";
   src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "open_sansregular", "sans-serif";
+  font-family: "open_sansregular";
   src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "dancing_script_otregular", "sans-serif";
+  font-family: "dancing";
   src: url("../fonts/dancingscript-regular-webfont.woff2") format("woff2"), url("../fonts/dancingscript-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -81,7 +81,6 @@ html {
 body {
   font-family: "open_sansregular", "sans-serif";
   font-size: 1.6rem;
-  background-color: red;
 }
 
 .burger-btn {
@@ -139,4 +138,33 @@ body {
   height: 75vh;
   text-align: center;
   color: #fff;
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/small.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-attachment: scroll;
+}
+.header__title {
+  font-family: "dancing", cursive;
+  font-size: 4.8rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.header__text {
+  font-size: 1.4rem;
+}
+.header__btn {
+  margin-top: 2em;
+  padding: 0.8em 1.6em;
+  font-size: 1.4rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.header__btn::before {
+  background-color: #eee;
 }/*# sourceMappingURL=style.css.map */

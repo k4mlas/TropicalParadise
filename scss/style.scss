@@ -20,7 +20,7 @@ html {
 //czcionki pobrane na serwer------------------------------------------------
 
 @font-face {
-	font-family: 'open_sansbold', 'sans-serif';
+	font-family: 'open_sansbold';
 	src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
 		url('../fonts/opensans-bold-webfont.woff') format('woff');
 	font-weight: bold;
@@ -29,7 +29,7 @@ html {
 }
 
 @font-face {
-	font-family: 'open_sansregular', 'sans-serif';
+	font-family: 'open_sansregular';
 	src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
 		url('../fonts/opensans-regular-webfont.woff') format('woff');
 	font-weight: normal;
@@ -38,7 +38,7 @@ html {
 }
 
 @font-face {
-	font-family: 'dancing_script_otregular', 'sans-serif';
+	font-family: 'dancing';
 	src: url('../fonts/dancingscript-regular-webfont.woff2') format('woff2'),
 		url('../fonts/dancingscript-regular-webfont.woff') format('woff');
 	font-weight: normal;
@@ -48,7 +48,6 @@ html {
 body {
 	font-family: 'open_sansregular', 'sans-serif';
 	font-size: 1.6rem;
-	background-color: red;
 }
 
 // Nawigacja-----------------------------------------
@@ -111,4 +110,31 @@ body {
 	height: 75vh;
 	text-align: center;
 	color: $pure-white;
+	@include bgImg('../img/small.jpg');
+	background-attachment: scroll;
+
+	&__title {
+		font-family: 'dancing', cursive;
+		font-size: 4.8rem;
+		font-weight: 300;
+		text-transform: capitalize;
+	}
+	&__text {
+		font-size: 1.4rem;
+	}
+	&__btn {
+		margin-top: 2em;
+		padding: 0.8em 1.6em;
+		font-size: 1.4rem;
+		background-color: $pure-white;
+		border: none;
+		border-radius: 8px;
+		color: $dark;
+		text-decoration: none;
+		text-transform: uppercase;
+		cursor: pointer;
+		&::before {
+			background-color: $light-white;
+		}
+	}
 }
