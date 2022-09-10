@@ -1,6 +1,6 @@
-@use './colors';
-@use './components';
-@use './mixin';
+@import './colors';
+@import './components';
+@import './mixin';
 
 //reset css-------------------------------------------------------------------------
 
@@ -82,7 +82,7 @@ body {
 	&__bars,
 	&__bars::after,
 	&__bars::before {
-		@include mixin.btnBurger;
+		@include btnBurger;
 	}
 
 	&__bars {
@@ -110,5 +110,5 @@ body {
 	padding: 2em;
 	height: 75vh;
 	text-align: center;
-	color: colors.$pure-white;
+	color: $pure-white;
 }
