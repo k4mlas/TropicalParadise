@@ -1,14 +1,6 @@
 @use './colors';
 @use './components';
-
-@mixin burgerBtn {
-	position: absolute;
-	right: 0;
-	height: 3px;
-	content: '';
-	background-color: colors.$pure-white;
-	transition: width 0.3s;
-}
+@use './mixin';
 
 //reset css-------------------------------------------------------------------------
 
@@ -90,7 +82,7 @@ body {
 	&__bars,
 	&__bars::after,
 	&__bars::before {
-		@include burgerBtn;
+		@include mixin.burgerBtn;
 	}
 	&__bars {
 		width: 100%;
@@ -101,7 +93,7 @@ body {
 		&::before {
 			top: 27px;
 			width: 30%;
-			transition-delay: .1s;
+			transition-delay: 0.1s;
 		}
 	}
 }
