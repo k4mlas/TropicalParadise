@@ -10,5 +10,19 @@ const handleNav = () => {
 			nav.classList.remove('nav--active');
 		});
 	});
+
+	handleNavItemsAnimation();
 };
+
+const handleNavItemsAnimation = () => {
+	let delayTime = 0;
+
+	allNavItems.forEach((item) => {
+		item.classList.toggle('nav-items-animation');
+		item.style.animationDelay = '.' + delayTime + 's'; //Dla każdego item dodajemy styl liniowy opóźnieni animacji o 0s.
+		delayTime++; // dodajemy jedną sekundę w pętli
+	});
+	
+};
+
 navBtn.addEventListener('click', handleNav);

@@ -43,6 +43,7 @@ html {
 		url('../fonts/dancingscript-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 body {
@@ -181,6 +182,21 @@ body {
 			background-color: $light-white;
 		}
 	}
+}
+
+//Animacje---------------------------------------------
+
+@keyframes navItemsAnimation {
+	from {
+		transform: translateX(200%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+.nav-items-animation {
+	animation: navItemsAnimation 1s both;
 }
 
 //Media------------------------------------
