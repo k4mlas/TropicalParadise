@@ -111,7 +111,7 @@ html {
   font-display: swap;
 }
 body {
-  font-family: "open_sansregular", "sans-serif";
+  font-family: "open_sansregular";
   font-size: 1.6rem;
 }
 
@@ -242,6 +242,45 @@ body {
   background-color: #eee;
 }
 
+.dreams__box {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+}
+.dreams__img {
+  width: 100%;
+  margin-bottom: 2em;
+  border: 3px dotted #1755e7;
+  box-shadow: 5px 2px 40px #1755e7;
+}
+.dreams__title {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.dreams__text {
+  font-size: 1.4rem;
+}
+
+.hero-img {
+  position: relative;
+  padding: 10em 2em;
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/hd-wallpaper-g00d39c071_640.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.hero-img__title {
+  font-family: "dancing", cursive;
+  margin-bottom: 0.5em;
+  font-size: 4.8rem;
+}
+.hero-img__text {
+  padding: 1em 0;
+}
+
 @-webkit-keyframes navItemsAnimation {
   from {
     transform: translateX(200%);
@@ -264,6 +303,28 @@ body {
           animation: navItemsAnimation 1s both;
 }
 
+@media (min-width: 576px) {
+  .dreams__box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .dreams__box-text {
+    width: 55%;
+  }
+  .dreams__box-text--right {
+    text-align: right;
+  }
+  .dreams__box-img {
+    width: 40%;
+  }
+  .dreams__box-img--right {
+    order: 1;
+  }
+  .dreams__img {
+    margin-bottom: 0;
+    max-height: 300px;
+  }
+}
 @media (min-width: 768px) {
   .white-block {
     height: 50px;
@@ -278,6 +339,19 @@ body {
   .header__btn {
     font-size: 1.6rem;
   }
+  .dreams__text {
+    font-size: 1.8rem;
+  }
+  .hero-img {
+    padding: 30rem 2em;
+  }
+  .hero-img hr {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .hero-img__text {
+    font-size: 2.2rem;
+  }
 }
 @media (min-width: 992px) {
   .burger-btn {
@@ -289,5 +363,34 @@ body {
   }
   .header__title {
     font-size: 10rem;
+  }
+  .nav__item {
+    font-size: 4.8rem;
+  }
+  .dreams__box {
+    margin: 5em 0;
+  }
+  .dreams__box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 2.5em;
+  }
+  .dreams__title {
+    font-size: 3.6rem;
+  }
+  .dreams__text {
+    font-size: 2.2rem;
+  }
+  .hero-img {
+    padding: 40rem 2em;
+    background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url(../img/hd-wallpaper-g97531c0bf_1920.jpg);
+  }
+  .hero-img__title {
+    font-size: 7.2rem;
+  }
+  .hero-img hr {
+    width: 60%;
+    max-width: 900px;
   }
 }/*# sourceMappingURL=style.css.map */
