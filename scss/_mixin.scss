@@ -13,3 +13,10 @@
 	background-size: cover;
 	background-attachment: fixed;
 }
+
+// mixin na pozycję tytułu kart
+@mixin isladsCardStyle {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
