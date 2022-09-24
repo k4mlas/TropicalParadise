@@ -516,6 +516,48 @@ body {
   background-color: #164dcc;
 }
 
+.footer {
+  color: #fff;
+  background-color: #2e2e2e;
+}
+.footer .wrapper {
+  padding: 6em 2em 2em;
+}
+.footer__box {
+  font-size: 1.4rem;
+}
+.footer__box .fas {
+  padding-right: 0.5em;
+}
+.footer__box-desktop {
+  display: none;
+}
+.footer__box-title {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.footer__box-social {
+  margin: 2em 0 1em;
+}
+.footer__box-link {
+  font-size: 3.6rem;
+  padding: 0 0.3em;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+.footer__box-link:hover {
+  color: #eee;
+}
+.footer__box-link:first-child {
+  padding-left: 0;
+}
+.footer__bottom-text {
+  padding: 2em;
+  text-align: center;
+}
+
 @-webkit-keyframes navItemsAnimation {
   from {
     transform: translateX(200%);
@@ -620,6 +662,33 @@ body {
   .islands__card {
     margin: 1em;
     width: 45%;
+  }
+  .footer__boxes {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__box-desktop {
+    display: block;
+  }
+  .footer__box {
+    margin: 0 2em;
+    width: 25%;
+  }
+  .footer__box:first-child {
+    width: 50%;
+  }
+  .footer__box-title {
+    font-size: 2.4rem;
+  }
+  .footer__box-list {
+    list-style: none;
+  }
+  .footer__box-list-item {
+    margin-bottom: 1em;
+  }
+  .footer__box-list-item a {
+    color: #fff;
+    text-decoration: none;
   }
 }
 @media (min-width: 992px) {

@@ -470,6 +470,50 @@ body {
 	}
 }
 
+//Footer-----------------------------------------------
+
+.footer {
+	color: $pure-white;
+	background-color: $dark;
+	.wrapper {
+		padding: 6em 2em 2em;
+	}
+	&__box {
+		font-size: 1.4rem;
+		.fas {
+			padding-right: 0.5em;
+		}
+	}
+	&__box-desktop {
+		display: none;
+	}
+	&__box-title {
+		margin-bottom: 1em;
+		font-size: 3rem;
+		text-transform: uppercase;
+	}
+	&__box-social {
+		margin: 2em 0 1em;
+	}
+	&__box-link {
+		font-size: 3.6rem;
+		padding: 0 0.3em;
+		text-decoration: none;
+		color: $pure-white;
+		transition: color 0.3s;
+		&:hover {
+			color: $light-white;
+		}
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+	&__bottom-text {
+		padding: 2em;
+		text-align: center;
+	}
+}
+
 //Animacje---------------------------------------------
 
 @keyframes navItemsAnimation {
@@ -578,6 +622,35 @@ body {
 		&__card {
 			margin: 1em;
 			width: 45%;
+		}
+	}
+	.footer {
+		&__boxes {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__box-desktop {
+			display: block;
+		}
+		&__box {
+			margin: 0 2em;
+			width: 25%;
+			&:first-child {
+				width: 50%;
+			}
+		}
+		&__box-title {
+			font-size: 2.4rem;
+		}
+		&__box-list {
+			list-style: none;
+		}
+		&__box-list-item {
+			margin-bottom: 1em;
+			a {
+				color: $pure-white;
+				text-decoration: none;
+			}
 		}
 	}
 }
