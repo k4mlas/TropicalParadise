@@ -143,6 +143,11 @@ body {
 		}
 	}
 }
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: $dark;
+}
 
 //header-------------------------------------
 
@@ -511,6 +516,9 @@ body {
 	&__bottom-text {
 		padding: 2em;
 		text-align: center;
+		span {
+			margin-right: 0.5em;
+		}
 	}
 }
 
