@@ -38,7 +38,7 @@ const handleObserver = () => {
 		) {
 			navBtnBars.classList.add('black-bars-color');
 		} else if (
-			!section.classList.contains('white-section') &&
+			section.classList.contains('white-section') &&
 			section.offsetTop <= currentSection + 60
 		) {
 			navBtnBars.classList.remove('black-bars-color');
