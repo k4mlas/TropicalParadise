@@ -567,15 +567,6 @@ body {
   margin-right: 0.5em;
 }
 
-@-webkit-keyframes navItemsAnimation {
-  from {
-    transform: translateX(200%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
 @keyframes navItemsAnimation {
   from {
     transform: translateX(200%);
@@ -585,8 +576,7 @@ body {
   }
 }
 .nav-items-animation {
-  -webkit-animation: navItemsAnimation 1s both;
-          animation: navItemsAnimation 1s both;
+  animation: navItemsAnimation 1s both;
 }
 
 @media (min-width: 576px) {
